@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=3 uid="uid://534t5odjslop"]
+
+[ext_resource type="Script" uid="uid://7asb6tihpb0r" path="res://bg.gd" id="1_a1ds0"]
+[ext_resource type="Texture2D" uid="uid://djao3g7ufxdky" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Colorful Environment/PNG/layers/background-sky.png" id="2_a1ds0"]
+[ext_resource type="Texture2D" uid="uid://b4h2iwb3lb80h" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Woods/ENVIRONMENT/Bacgkrounds/bg-trees.png" id="3_1yvor"]
+[ext_resource type="Texture2D" uid="uid://diop7wiumkml8" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Day-Platformer/PNG/clouds.png" id="4_wfgfm"]
+[ext_resource type="Texture2D" uid="uid://dkj612c2xk4vr" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Mist Forest/layers/mist-forest-background-rocks.png" id="5_1yvor"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_a1ds0")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Sky" type="Sprite2D" parent="ParallaxLayer"]
+z_index = -1
+position = Vector2(572, 334.00003)
+scale = Vector2(72.87499, 8.975)
+texture = ExtResource("2_a1ds0")
+
+[node name="Parallax2D" type="ParallaxLayer" parent="."]
+scale = Vector2(1.19375, 1.5576922)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(900, 0)
+
+[node name="Clouds5" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(825.9686, 67.40744)
+scale = Vector2(0.4986939, 0.5379934)
+texture = ExtResource("4_wfgfm")
+
+[node name="Clouds2" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(132.35602, 49.432106)
+scale = Vector2(0.4986939, 0.5379934)
+texture = ExtResource("4_wfgfm")
+
+[node name="Parallax2D2" type="ParallaxLayer" parent="."]
+position = Vector2(94.5, 485)
+scale = Vector2(1.19375, 1.5576923)
+motion_scale = Vector2(1.5, 1.5)
+motion_mirroring = Vector2(790, 0)
+
+[node name="BgTrees2" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(158.74344, 0.6419983)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("3_1yvor")
+
+[node name="BgTrees3" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(318.74347, -0.64193726)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("3_1yvor")
+
+[node name="BgTrees4" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(477.90576, -1.283905)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("3_1yvor")
+
+[node name="BgTrees5" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(635.39264, 0)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("3_1yvor")
+
+[node name="BgTrees6" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(795.39264, 1.2839661)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("3_1yvor")
+
+[node name="BgTrees" type="Sprite2D" parent="Parallax2D2"]
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("3_1yvor")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(1300, 0)
+
+[node name="MistForestBackgroundRocks2" type="Sprite2D" parent="ParallaxLayer2"]
+z_index = -1
+position = Vector2(1040, 313)
+scale = Vector2(3.4302883, 3.015625)
+texture = ExtResource("5_1yvor")
+
+[node name="MistForestBackgroundRocks" type="Sprite2D" parent="ParallaxLayer2"]
+z_index = -1
+position = Vector2(364.375, 317)
+scale = Vector2(3.6478367, 3.015625)
+texture = ExtResource("5_1yvor")
