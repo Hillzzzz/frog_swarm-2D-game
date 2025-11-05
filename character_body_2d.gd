@@ -55,4 +55,5 @@ func _physics_process(delta: float) -> void:
 
 	# Optional: restart if dead (uses your Game autoload)
 	if Game.PlayerHP <= 0:
+		Game.reset_run()
 		get_tree().change_scene_to_file("res://main.tscn")
